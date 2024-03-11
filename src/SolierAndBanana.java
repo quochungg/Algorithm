@@ -22,6 +22,6 @@ public class SolierAndBanana {
             result = n*-1;
         }
         System.out.println(result);
-        
+        sc.close();
     }
 }
