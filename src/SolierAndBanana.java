@@ -10,8 +10,7 @@ public class SolierAndBanana {
         Scanner sc = new Scanner(System.in);
         k = sc.nextInt(); //the cost of the first banana
         n = sc.nextInt(); //initial number of dollars
-        w = sc.nextInt(); //number of bananas he wants
-        
+        w = sc.nextInt(); //number of bananas he wants       
         for (int i = 1; i <= w ; i++) {
             n -= (i*k);
         }
