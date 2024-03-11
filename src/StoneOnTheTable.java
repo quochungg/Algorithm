@@ -13,6 +13,6 @@ public class StoneOnTheTable {
             }
         }
         System.out.println(result);
-        sc.close();
+        sc.close(); 
     }
 }
