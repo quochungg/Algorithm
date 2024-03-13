@@ -16,7 +16,7 @@ public class Monster {
             for (int j = 0; j < n; j++) {
                 monsterList.add(sc.nextInt());
             }
-            while (check(monsterList)) {
+            while (indices.size()<monsterList.size()) {
                 int maxIndex = findMaxIndex(monsterList);
                 int healthRemain = monsterList.get(maxIndex) - k;
                 if (healthRemain <= 0) {
@@ -44,16 +44,6 @@ public class Monster {
             }
         }
         return index;
-    }
-
-    private static boolean check(ArrayList<Integer> list) {
-
-        for (int i = 0; i < list.size(); i++) {
-            if (list.get(i) > 0) {
-                return true;
-            }
-        }
-        return false;
     }
 
 }
